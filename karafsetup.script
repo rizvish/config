@@ -34,4 +34,4 @@ install mvn:com.strcapstone.rest/restservice/1.0-SNAPSHOT
 install mvn:com.strcapstone.master/commands/1.0-SNAPSHOT
 
 feature:repo-add cxf
-feature:install cxf-jaxrs
+#feature:install cxf-jaxrs
