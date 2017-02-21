@@ -1,37 +1,48 @@
-Install mvn:org.quartz-scheduler/quartz/2.2.2
-Install wrap:mvn:c3p0/c3p0/0.9.1.2
-Install wrap:mvn:org.quartz-scheduler/quartz-jobs/2.2.2
+Install -l 69 -s mvn:org.quartz-scheduler/quartz/2.2.2 
+Install -l 60 -s wrap:mvn:c3p0/c3p0/0.9.1.2 
+Install -l 69 -s wrap:mvn:org.quartz-scheduler/quartz-jobs/2.2.2 
 
-feature:repo-add mvn:org.ops4j.pax.jdbc/pax-jdbc-features/0.8.0/xml/features
-feature:install transaction jndi pax-jdbc-pool-dbcp2 pax-jdbc-config
-install -s mvn:org.postgresql/postgresql/9.4.1211.jre7
-feature:install jdbc
-
-install -s mvn:javax.servlet/javax.servlet-api/3.1.0
-install -s mvn:javax.mail/mail/1.4.7
-install -s mvn:com.fasterxml.jackson.core/jackson-core/2.8.4
-install -s mvn:com.fasterxml.jackson.core/jackson-annotations/2.8.4
-install -s mvn:com.fasterxml.jackson.core/jackson-databind/2.8.4
-install mvn:org.mongodb/mongo-java-driver/3.4.0-rc1
-
-install mvn:org.eclipse.persistence/javax.persistence/2.1.0
-install mvn:org.javassist/javassist/3.20.0-GA
-
-install mvn:javax.servlet.jsp/javax.servlet.jsp-api/2.3.2-b02
-
-install mvn:com.strcapstone.database/database-impl/1.0-SNAPSHOT
-install mvn:com.strcapstone.database/database-interfaces/1.0-SNAPSHOT
-install mvn:com.strcapstone.dropboxservice/dropboxservice/1.0-SNAPSHOT
-install mvn:com.strcapstone.email/EmailActions-Attachments/1.0-SNAPSHOT
-install mvn:com.strcapstone.filesactions/FilesActions-SaveLocal/1.0-SNAPSHOT
-install mvn:com.strcapstone.JobManager/JobManager-DatabaseJobs/1.0-SNAPSHOT
-install mvn:com.strcapstone.JobManager/JobManager-DatabaseParamUpdater/1.0-SNAPSHOT
-install mvn:com.strcapstone.JobManager/JobManager-api/1.0-SNAPSHOT
-install mvn:com.strcapstone.schedulerservice/scheduler-interfaces/1.0-SNAPSHOT
-install mvn:com.strcapstone.schedulerservice/schedulerservice/1.0-SNAPSHOT
-install mvn:com.strcapstone.authorization/authorizationservice/1.0-SNAPSHOT
-install mvn:com.strcapstone.rest/restservice/1.0-SNAPSHOT
-install mvn:com.strcapstone.master/commands/1.0-SNAPSHOT
+feature:repo-add mvn:org.ops4j.pax.jdbc/pax-jdbc-features/0.8.0/xml/features 
+feature:install transaction jndi pax-jdbc-pool-dbcp2 pax-jdbc-config 
+install -l 69 -s mvn:org.postgresql/postgresql/9.4.1211.jre7 
+feature:install jdbc 
 
 feature:repo-add cxf
 feature:install cxf-jaxrs
+
+install -l 69 -s mvn:javax.servlet/javax.servlet-api/3.1.0
+install -l 69 -s mvn:javax.mail/mail/1.4.7 
+install -l 69 -s mvn:com.fasterxml.jackson.core/jackson-core/2.8.4 
+install -l 69 -s mvn:com.fasterxml.jackson.core/jackson-annotations/2.8.4 
+install -l 69 -s mvn:com.fasterxml.jackson.core/jackson-databind/2.8.4 
+install -l 69 mvn:org.mongodb/mongo-java-driver/3.4.0-rc1 
+
+install -l 69 -s mvn:org.eclipse.persistence/javax.persistence/2.1.0 
+install -l 69 -s mvn:org.javassist/javassist/3.20.0-GA 
+
+install -l 69 -s mvn:javax.servlet.jsp/javax.servlet.jsp-api/2.3.2-b02 
+
+install -l 69 -s mvn:org.apache.httpcomponents/httpcore-osgi/4.4.5 
+install -l 69 -s mvn:org.apache.httpcomponents/httpclient-osgi/4.5.2 
+install -l 69 -s wrap:mvn:org.apache.httpcomponents/httpclient/4.5.2 
+install -l 69 -s wrap:mvn:org.apache.httpcomponents/httpmime/4.5.2 
+install -l 69 -s wrap:mvn:org.apache.httpcomponents/httpclient-cache/4.5.2 
+
+install -l 79 -s mvn:com.strcapstone.database/database-interfaces/1.0-SNAPSHOT 
+install -l 79 -s mvn:com.strcapstone.JobManager/JobManager-api/1.0-SNAPSHOT 
+install -l 79 -s mvn:com.strcapstone.schedulerservice/scheduler-interfaces/1.0-SNAPSHOT 
+install -l 79 -s mvn:com.strcapstone.oauthservices/oauthservice-api/1.0-SNAPSHOT 
+
+install -s mvn:com.strcapstone.database/database-impl/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.dropboxservice/dropboxservice/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.email/EmailActions-Attachments/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.filesactions/FilesActions-SaveLocal/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.JobManager/JobManager-DatabaseJobs/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.JobManager/JobManager-DatabaseParamUpdater/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.schedulerservice/schedulerservice/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.authorization/authorizationservice/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.rest/restservice/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.oauthservices/oauth-rest/1.0.3-SNAPSHOT
+install -s mvn:com.strcapstone.oauthservices/oauthservice-dropbox-impl/1.0.1-SNAPSHOT
+install -s mvn:com.strcapstone.oauthservices/oauthservice-github-impl/1.0-SNAPSHOT
+install -s mvn:com.strcapstone.master/commands/1.0-SNAPSHOT
