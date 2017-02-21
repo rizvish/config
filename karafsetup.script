@@ -1,4 +1,4 @@
-Install -l 69 -s mvn:org.quartz-scheduler/quartz/2.2.2 
+#Install -l 69 -s mvn:org.quartz-scheduler/quartz/2.2.2 
 Install -l 60 -s wrap:mvn:c3p0/c3p0/0.9.1.2 
 Install -l 69 -s wrap:mvn:org.quartz-scheduler/quartz-jobs/2.2.2 
 
