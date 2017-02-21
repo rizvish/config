@@ -15,7 +15,7 @@ install -l 69 -s mvn:javax.mail/mail/1.4.7
 install -l 69 -s mvn:com.fasterxml.jackson.core/jackson-core/2.8.4 
 install -l 69 -s mvn:com.fasterxml.jackson.core/jackson-annotations/2.8.4 
 install -l 69 -s mvn:com.fasterxml.jackson.core/jackson-databind/2.8.4 
-install -l 69 mvn:org.mongodb/mongo-java-driver/3.4.0-rc1 
+install -l 69 -s mvn:org.mongodb/mongo-java-driver/3.4.0-rc1 
 
 install -l 69 -s mvn:org.eclipse.persistence/javax.persistence/2.1.0 
 install -l 69 -s mvn:org.javassist/javassist/3.20.0-GA 
